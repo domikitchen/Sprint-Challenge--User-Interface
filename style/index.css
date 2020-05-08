@@ -66,7 +66,7 @@ p {
     line-height: 1.4;
 }
 header {
-    margin: 0 auto;
+    margin: 20px auto 0 auto;
     width: 800px;
     height: 75px;
     display: flex;
@@ -90,7 +90,6 @@ header a {
 }
 .container #banner {
     width: 100%;
-    margin-bottom: 2%;
 }
 .container {
     width: 800px;
@@ -137,6 +136,17 @@ header a {
     align-items: center;
     justify-content: center;
 }
+#boxOne { background-color: teal;}
+#boxTwo { background-color: gold;}
+#boxThree { background-color: cadetblue;}
+#boxFour { background-color: coral;}
+#boxFive { background-color: crimson;}
+#boxSix { background-color: forestgreen;}
+#boxSeven { background-color: darkorchid;}
+#boxEight { background-color: hotpink;}
+#boxNine { background-color: indigo;}
+#boxTen { background-color: dodgerblue;}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -195,21 +205,30 @@ footer nav a {
         font-size: 1.2rem;
         margin: 1% 0;
     }
-    .top-content {
+    .container #banner {
+        margin-left: 5%;
+        width: 90%;
+        height: 20vh;
+    }
+    .container .top-content {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        margin-left: 7.5%;
+        width: 85%;
     }
     .middle-content .boxes {
         display: flex;
         flex-flow: column wrap;
     }
-    .middle-content .boxes .box {
-        height: 100px;
-    }
     .bottom-content {
+        width: 100%;
         display: flex;
-        flex-direction: column nowrap;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .bottom-content .text-container {
+        justify-self: flex-start;
     }
     footer nav {
         padding: 2% 0;
@@ -257,8 +276,8 @@ footer nav a {
         flex-flow: row wrap;
     }
     .middle-content .boxes .box {
-        width: 30%;
-        height: 200px;
+        width: 250px;
+        height: 250px;
     }
     .bottom-content {
         padding: 5% 0 12% 0;
